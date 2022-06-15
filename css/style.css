@@ -158,6 +158,9 @@ body {
   .main {
     background-position-x: 80%;
   }
+  .main-overlay {
+    opacity: .75;
+  }
 
   .main-content h1 {
       font-size: 4rem;
