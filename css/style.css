@@ -1,0 +1,142 @@
+@import url("fonts.css");
+@import url("font-awesome/css/font-awesome.min.css");
+@import url("micons/micons.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #151515;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  color: #ffffff;
+}
+
+.nav-list {
+	display: block;	
+  position: absolute;  
+	width: 100%;
+  top: 0;
+  text-align: center;    
+  z-index: 1;
+}
+
+.nav-list li {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+  text-transform: uppercase;  
+	margin: 0 50px;
+	padding: 0;
+}
+
+.nav-list li a, nav-list li a:visited {
+  color: #ffffff;
+}
+
+.nav-list li a:hover, nav-list li a:focus {
+  color: #cc005f;
+}
+
+.main {
+  background:#2F3E4A url("../img/background.jpg") no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  display: table;
+  position: relative;
+  text-align: left;  
+}
+.main-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  opacity: .85;
+}
+
+.main-content { 
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  transform: translateY(-0.1rem);
+}
+
+.main-content h5 {
+  color: #cc005f;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  letter-spacing: .3rem;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+
+.main-content h1 {
+  color: #FFFFFF;
+  font-size: 8.4rem;
+  line-height: 1.071;
+  max-width: 900px;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  margin-right: auto;
+  text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+}
+
+.main-content .main-position {  
+  font-size: 1.7rem;
+  line-height: 2.4rem;  
+  letter-spacing: .2rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+
+
+.row {
+  width: 94%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-social {
+	display: block;
+	position: absolute;
+  text-align: center;
+	width: 100%;
+	left: 0;
+	bottom: 1.1rem;
+	font-size: 2.3rem;
+	margin: 0;
+	padding: 0;
+}
+.main-social li {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 0;
+}
+.main-social li a, .main-social li a:visited {
+	color: #FFFFFF;
+}
+.main-social li a:hover, .main-social li a:focus {
+	color: #cc005f;
+}
