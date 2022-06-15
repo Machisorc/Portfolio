@@ -153,6 +153,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .main {
+    background-position-x: 80%;
+  }
 
   .main-content h1 {
       font-size: 4rem;
