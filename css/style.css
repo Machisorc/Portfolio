@@ -24,12 +24,21 @@ li {
   list-style: none;
 }
 
+input {
+  display: none;
+}
+
 body {
   background: #151515;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 3rem;
   color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .nav-list {
@@ -142,3 +151,63 @@ body {
 .main-social li a:hover, .main-social li a:focus {
 	color: #cc005f;
 }
+
+@media (max-width: 768px) {
+
+  .main-content h1 {
+      font-size: 4rem;
+  }
+  .menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;    
+    cursor: pointer;    
+    height: 50px;
+    z-index: 10;
+  }
+  .menu:hover .bar {
+    box-shadow: 1px 1px 7px 1px RGBa(0, 0, 0, 0.3);
+  }
+  .bar {
+    width: 40px;
+    height: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
+    border-radius: 2px;
+    transition: 0.4s ease;
+  }
+  .bar:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;  	
+    position: absolute;  
+    width: 120px;
+    top: 10%;
+    left: 20px;
+    text-align: left;    
+    z-index: 1;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    text-transform: uppercase;  
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li a, nav-list li a:visited {
+    color: #ffffff;
+  }
+  
+  .nav-list li a:hover, nav-list li a:focus {
+    color: #cc005f;
+  }
+}
+   
+  input:checked ~ ul {
+    display:block;  
+  }
